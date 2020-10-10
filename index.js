@@ -12,3 +12,7 @@ function displaycount(){
 function displaycount2(){
     document.getElementById("Brock").innerHTML = count()
 }
+
+function addMatchup() {
+    
+}

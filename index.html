@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Match Up</h1>
-    <section class="section">
+    <!-- <section class="section">
         Who won this round?
     </section>
     <body>
@@ -23,75 +23,102 @@
     </p>
     <p id="Brock">
         0
-    </p>
+    </p> -->
     <section class="section">
-        What was the match up?
+        <form>
+            <label>Who won this round?</label>
+            <input type="radio" id="radio1" name="radio" value="Trent">
+            <label>Trent</label>
+            <input type="radio" id="radio2" name="radio" value="Brock">
+            <label>Brock</label>
+           <br>
+            What was the match up?
+            <select name="hometeams" class="teams">
+                <option value="none" selected></option>
+                <option>Atlanta Hawks</option>
+                <option>Boston Celtics</option>
+                <option>Brooklen Nets</option>
+                <option>Charlotte Hornets</option>
+                <option>Chicago Bulls</option>
+                <option>Cleveland Cavaliers</option>
+                <option>Dallas Mavericks</option>
+                <option>Denver Nuggets</option>
+                <option>Detriot Pistons</option>
+                <option>Golden State Warriors</option>
+                <option>Houston Rockets</option>
+                <option>Indiana Pacers</option>
+                <option>LA CLippers</option>
+                <option>LA Lakers</option>
+                <option>Memphis Grizzlies</option>
+                <option>Miami Heat</option>
+                <option>Milwaukee Bucks</option>
+                <option>Minnesota Timberwolves</option>
+                <option>New Orleans Pelicans</option>
+                <option>New York Knicks</option>
+                <option>Oklahoma City Thunder</option>
+                <option>Orlando Magic</option>
+                <option>Philadelphia 76ers</option>
+                <option>Phoenix Suns</option>
+                <option>Portland Trail Blazers</option>
+                <option>Sacramento Kings</option>
+                <option>San Antonio Spurs</option>
+                <option>Toronto Raptors</option>
+                <option>Utah Jaz</option>
+                <option>Washington Wizards</option>
+            </select>
+            vs
+            <select name="visitteams" class="teams">
+                <option value="none" selected></option>
+                <option>Atlanta Hawks</option>
+                <option>Boston Celtics</option>
+                <option>Brooklen Nets</option>
+                <option>Charlotte Hornets</option>
+                <option>Chicago Bulls</option>
+                <option>Cleveland Cavaliers</option>
+                <option>Dallas Mavericks</option>
+                <option>Denver Nuggets</option>
+                <option>Detriot Pistons</option>
+                <option>Golden State Warriors</option>
+                <option>Houston Rockets</option>
+                <option>Indiana Pacers</option>
+                <option>LA CLippers</option>
+                <option>LA Lakers</option>
+                <option>Memphis Grizzlies</option>
+                <option>Miami Heat</option>
+                <option>Milwaukee Bucks</option>
+                <option>Minnesota Timberwolves</option>
+                <option>New Orleans Pelicans</option>
+                <option>New York Knicks</option>
+                <option>Oklahoma City Thunder</option>
+                <option>Orlando Magic</option>
+                <option>Philadelphia 76ers</option>
+                <option>Phoenix Suns</option>
+                <option>Portland Trail Blazers</option>
+                <option>Sacramento Kings</option>
+                <option>San Antonio Spurs</option>
+                <option>Toronto Raptors</option>
+                <option>Utah Jaz</option>
+                <option>Washington Wizards</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form> 
     </section>
-    <select>
-        <option>Atlanta Hawks</option>
-        <option>Boston Celtics</option>
-        <option>Brooklen Nets</option>
-        <option>Charlotte Hornets</option>
-        <option>Chicago Bulls</option>
-        <option>Cleveland Cavaliers</option>
-        <option>Dallas Mavericks</option>
-        <option>Denver Nuggets</option>
-        <option>Detriot Pistons</option>
-        <option>Golden State Warriors</option>
-        <option>Houston Rockets</option>
-        <option>Indiana Pacers</option>
-        <option>LA CLippers</option>
-        <option>LA Lakers</option>
-        <option>Memphis Grizzlies</option>
-        <option>Miami Heat</option>
-        <option>Milwaukee Bucks</option>
-        <option>Minnesota Timberwolves</option>
-        <option>New Orleans Pelicans</option>
-        <option>New York Knicks</option>
-        <option>Oklahoma City Thunder</option>
-        <option>Orlando Magic</option>
-        <option>Philadelphia 76ers</option>
-        <option>Phoenix Suns</option>
-        <option>Portland Trail Blazers</option>
-        <option>Sacramento Kings</option>
-        <option>San Antonio Spurs</option>
-        <option>Toronto Raptors</option>
-        <option>Utah Jaz</option>
-        <option>Washington Wizards</option>
-    </select>
-    vs
-    <select>
-        <option>Atlanta Hawks</option>
-        <option>Boston Celtics</option>
-        <option>Brooklen Nets</option>
-        <option>Charlotte Hornets</option>
-        <option>Chicago Bulls</option>
-        <option>Cleveland Cavaliers</option>
-        <option>Dallas Mavericks</option>
-        <option>Denver Nuggets</option>
-        <option>Detriot Pistons</option>
-        <option>Golden State Warriors</option>
-        <option>Houston Rockets</option>
-        <option>Indiana Pacers</option>
-        <option>LA CLippers</option>
-        <option>LA Lakers</option>
-        <option>Memphis Grizzlies</option>
-        <option>Miami Heat</option>
-        <option>Milwaukee Bucks</option>
-        <option>Minnesota Timberwolves</option>
-        <option>New Orleans Pelicans</option>
-        <option>New York Knicks</option>
-        <option>Oklahoma City Thunder</option>
-        <option>Orlando Magic</option>
-        <option>Philadelphia 76ers</option>
-        <option>Phoenix Suns</option>
-        <option>Portland Trail Blazers</option>
-        <option>Sacramento Kings</option>
-        <option>San Antonio Spurs</option>
-        <option>Toronto Raptors</option>
-        <option>Utah Jaz</option>
-        <option>Washington Wizards</option>
-    </select>
+    <section>
+        <h2>Overall</h2>
+        <div>
+            Trent
+        </div>
+        <span>
+            Brock
+        </span>        
+    </section>
+    <section class="container">
+        <div id="history">
+            <h3>Previous Match Ups</h3>
+            <ul id="history-list">
+            </ul>
+        </div>
+    </section>  
     <script src="index.js"></script> 
 </body>
 </html>
